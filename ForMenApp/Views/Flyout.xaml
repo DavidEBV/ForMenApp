@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:Local="clr-namespace:ForMenApp.Views"
+       x:Class="ForMenApp.Views.Flyout">
+
+    <FlyoutItem Title="HOME">
+        <Tab>
+            <ShellContent>
+                <Local:HomePage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="CAMISETAS">
+        <Tab>
+            <ShellContent>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="CHAQUETAS">
+        <Tab>
+            <ShellContent>
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="CAMISAS">
+        <Tab>
+            <ShellContent>
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="ESMOQUIN">
+        <Tab>
+            <ShellContent>
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="ABRIGOS">
+        <Tab>
+            <ShellContent>
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="PANTALONES">
+        <Tab>
+            <ShellContent>
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+</Shell>

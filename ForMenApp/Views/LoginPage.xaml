@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForMenApp.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="auto,auto,auto,auto,auto,auto,*,auto"
+                  ColumnDefinitions="*,*,*"
+                  Padding="25,0,25,0">
+                
+                <Label Text="4M&#10; For men"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0,40,0,40"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       VerticalOptions="Start"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="INGRESA TUS DATOS PARA CONTINUAR"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       FontSize="13"
+                       FontAttributes="Italic"
+                       TextColor="Black"
+                       HorizontalOptions="Start"
+                       HorizontalTextAlignment="Center"/>
+
+                <Grid Grid.Column="0"
+                      Grid.Row="2"
+                      Grid.ColumnSpan="3"
+                      Margin="0,15,0,0"
+                      RowDefinitions="Auto">
+
+                    <Label Text="Email"
+                           Grid.Row="0"
+                           Margin="10,0,10,0"
+                           TextColor="Black"
+                           FontSize="12"
+                           VerticalOptions="Start"/>
+
+                    <Frame Grid.Row="0"
+                           Margin="0,5,0,5"
+                           BorderColor="Black"
+                           BackgroundColor="Transparent"
+                           TranslationY="-8"
+                           VerticalOptions="End"
+                           HasShadow="False"
+                           HeightRequest="33"
+                           CornerRadius="0">
+
+                        <Entry Placeholder=" example@example.com"
+                               FontAttributes="Italic"
+                               FontSize="12"
+                               CharacterSpacing="2"
+                               VerticalOptions="End"
+                               TranslationY="15"
+                               />
+
+                    </Frame>
+                </Grid>
+
+                <Grid Grid.Column="0"
+                      Grid.Row="3"
+                      Grid.ColumnSpan="3"
+                      RowDefinitions="Auto">
+
+                    <Label Text="Password"
+                           Grid.Row="0"
+                           Margin="10,0,10,0"
+                           TextColor="Black"
+                           FontSize="12"
+                           VerticalOptions="Start"
+                           BackgroundColor="Transparent"/>
+
+                    <Frame Grid.Row="0"
+                           Margin="0,5,0,5"
+                           BorderColor="Black"
+                           BackgroundColor="Transparent"
+                           TranslationY="-8"
+                           VerticalOptions="End"
+                           HasShadow="False"
+                           HeightRequest="33"
+                           CornerRadius="0">
+
+                        <Entry Placeholder=" ********"
+                               FontAttributes="Italic"
+                               FontSize="12"
+                               CharacterSpacing="2"
+                               VerticalOptions="End"
+                               TranslationY="15"/>
+
+                    </Frame>
+                </Grid>
+
+                <Button Text="Ingresar"
+                        TextColor="White"
+                        Margin="0,5,0,5"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        BackgroundColor="#1F0824"
+                        CornerRadius="5"/>
+
+                <Grid Grid.Row="5"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"
+                      RowDefinitions="*,*">
+
+                    <Label Grid.Row="0"
+                           Text="¿Olvidaste tu contraseña?"
+                           FontAttributes="Italic"
+                           FontSize="12"/>
+                    <Label Grid.Row="1"
+                           Text="O puedes ingresar con:"
+                           FontAttributes="Italic"/>
+                    
+                </Grid>
+
+                <Frame Grid.Row="6"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       HasShadow="False"
+                       BorderColor="Black"
+                       CornerRadius="0"
+                       HeightRequest="40"
+                       BackgroundColor="Transparent" 
+                       Padding="0"
+                       Margin="0,5,0,0">
+                    <Grid RowDefinitions="*"
+                          ColumnDefinitions="auto,*"
+                          HorizontalOptions="Center">
+                        <Image Source="google.png"
+                               HeightRequest="25"
+                               WidthRequest="25"
+                               HorizontalOptions="End"
+                               Grid.Column="0"/>
+
+                        <Label Text="Login With Google"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Button Grid.Row="6"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Fill"
+                        Background="Transparent"
+                        BorderWidth="0"/>
+
+                <Frame Grid.Row="7"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       HasShadow="False"
+                       BorderColor="Black"
+                       CornerRadius="0"
+                       HeightRequest="40"
+                       BackgroundColor="Transparent" 
+                       Padding="0"
+                       Margin="0,0,0,5">
+                    <Grid RowDefinitions="*"
+                          ColumnDefinitions="auto,*"
+                          HorizontalOptions="Center">
+                        <Image Source="facebook.png"
+                               HeightRequest="25"
+                               WidthRequest="25"
+                               HorizontalOptions="End"
+                               Grid.Column="0"/>
+
+                        <Label Text="Login With Facebook"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Button Grid.Row="7"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Fill"
+                        Background="Transparent"
+                        BorderWidth="0"/>
+
+                <Label Grid.Row="8"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       VerticalOptions="End">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="¿No tienes una cuenta? "/>
+                            <Span Text="Registrate ahora"
+                                  TextColor="Black">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding HVregistro}"
+                                                          CommandParameter="ForMenApp/Views/RegisterPage.xaml"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

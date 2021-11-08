@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForMenApp.Views.StartPage"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="*"
+                  ColumnDefinitions="*"
+                  VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand">
+                <Label Text="4M&#10; For men"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"/>
+
+                <ImageButton BackgroundColor="#1F0824"
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             VerticalOptions="End"
+                             HorizontalOptions="Center"
+                             Margin="100"
+                             Padding="15"   
+                             CornerRadius="5"
+                             HeightRequest="50"
+                             WidthRequest="50"
+                             Source="angleright.png"/> 
+                <!--Clicked="StartBtn"-->
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

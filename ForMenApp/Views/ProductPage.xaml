@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             x:Class="ForMenApp.Views.ProductPage"
+             BackgroundColor="#FFFFFF"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="auto,auto,auto"
+                  ColumnDefinitions="*,*,*,*"
+                  Margin="10">
+
+                <Label Text="4M"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       Margin="5"
+                       TextColor="Black"/>
+
+                <ImageButton Source="menuham.png"
+                             Grid.Row="0"
+                             Grid.Column="3"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             BackgroundColor="#FFFFFF"
+                             HorizontalOptions="End"
+                             Clicked="menuBtnClicked"/>
+
+                <Frame Grid.Row="1"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       Margin="5,0,5,0"
+                       Padding="20,2"
+                       BorderColor="LightGray"
+                       HasShadow="False">
+                    <Grid ColumnDefinitions="*,40"
+                          RowDefinitions="40">
+
+                        <autocomplete:SfAutoComplete Watermark="Search"
+                                                     Grid.Column="0"
+                                                     FontAttributes="Italic"
+                                                     TextColor="Gray"
+                                                     VerticalOptions="Center"
+                                                     HorizontalOptions="FillAndExpand"
+                                                     ShowBorder="False"/>
+
+                    </Grid>
+                </Frame>
+
+                
+
+                <Line X1="500"
+                      X2="0"
+                      Y1="1"
+                      Y2="1"
+                      Margin="0,5"
+                      Stroke="#FFCE1F"
+                      Grid.Row="2"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="4"/>
+                <Line X1="500"
+                      X2="0"
+                      Y1="0"
+                      Y2="0"
+                      Margin="0,5"
+                      Stroke="#FFCE1F"
+                      Grid.Row="2"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="4"/>
+                <Line X1="500"
+                      X2="0"
+                      Y1="2"
+                      Y2="2"
+                      Margin="0,5"
+                      Stroke="#FFCE1F"
+                      Grid.Row="2"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="4"/>
+
+                <Grid Grid.Row="3"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="4"
+                      ColumnDefinitions="*,auto,*"
+                      RowDefinitions="auto,auto,auto,*,*">
+                    <Label Text="Men's HMLYN D. Parka"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           VerticalOptions="Start"
+                           TextColor="Black"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="TNF"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           VerticalOptions="Start"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Image Source="producto1.png"
+                           Grid.Column="0"
+                           Grid.Row="2"
+                           Grid.ColumnSpan="3"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"
+                           HeightRequest="300"/>
+
+                    <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           VerticalTextAlignment="Start"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Italic"
+                           FontSize="12"
+                           TextColor="Black"
+                           WidthRequest="250"/>
+
+                    <Button Text="AL CARRITO"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            BackgroundColor="#1F0824"
+                            TextColor="White"
+                            Margin="50,5,50,5"
+                            CornerRadius="10"/>
+
+                </Grid>
+
+
+                
+            </Grid>
+            
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="#FFCE1F"
+                   VerticalOptions="End"
+                   HorizontalOptions="End"
+                   WidthRequest="50"
+                   Margin="0,0,10,10"
+                   Padding="0"
+                   CornerRadius="25">
+
+                <Grid ColumnDefinitions="*"
+                      RowDefinitions="*"
+                      HorizontalOptions="CenterAndExpand">
+                    <ImageButton Grid.Column="0"
+                                 Source="shoppingcar.png"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 Clicked="btnCarrito"/>
+
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
